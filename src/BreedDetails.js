@@ -40,11 +40,11 @@ class BreedDetails extends React.Component {
         } else {
             return (<>
                 <Row className="align-items-center">
-                    <Col>
+                    <Col md>
                         <img src={this.state.imageUrl} className="w-100" />
                     </Col>
 
-                    <Col>
+                    <Col md className="mt-4">
                         <Row>
                             <Col>
                                 <h4>{this.state.breed.name}</h4>
@@ -57,7 +57,7 @@ class BreedDetails extends React.Component {
                         </Row>
                     </Col>
                 </Row>
-                <Row className="mt-4">
+                <Row className="mt-3">
                     <Col>
                         <p className="mb-1"><strong>Origin:</strong> {this.state.breed.origin}</p>
                     </Col>
