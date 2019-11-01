@@ -3,7 +3,9 @@ import BootstrapSpinner from 'react-bootstrap/Spinner';
 import './Spinner.css'
 
 function Spinner(props) {
-    return <BootstrapSpinner animation="border" className="spinner" />;
+    return <div className="spinner-container">
+        <BootstrapSpinner animation="border" />
+    </div>;
 }
 
 export default Spinner;
